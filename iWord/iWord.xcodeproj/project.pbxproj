@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC691E52AB6F003CBB30 /* main.m */; };
+		2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */; };
+		2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */; };
+		2E55BC731E52AB6F003CBB30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E55BC711E52AB6F003CBB30 /* Main.storyboard */; };
+		2E55BC751E52AB6F003CBB30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E55BC741E52AB6F003CBB30 /* Assets.xcassets */; };
+		2E55BC781E52AB6F003CBB30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E55BC761E52AB6F003CBB30 /* LaunchScreen.storyboard */; };
+		2E55BC861E52ABB1003CBB30 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E55BC851E52ABB1003CBB30 /* NotificationCenter.framework */; };
+		2E55BC8A1E52ABB2003CBB30 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC891E52ABB2003CBB30 /* TodayViewController.m */; };
+		2E55BC8D1E52ABB2003CBB30 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E55BC8B1E52ABB2003CBB30 /* MainInterface.storyboard */; };
+		2E55BC911E52ABB2003CBB30 /* iWordWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA01E52CECF003CBB30 /* IW_WordSearchController.m */; };
+		2E55BCA41E52CEFA003CBB30 /* IW_WordHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA31E52CEFA003CBB30 /* IW_WordHistoryController.m */; };
+		2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA61E52CF09003CBB30 /* IW_SettingViewController.m */; };
+		2E55BCCC1E531EE0003CBB30 /* IW_DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCB1E531EE0003CBB30 /* IW_DBManager.m */; };
+		2E55BCCF1E531F01003CBB30 /* IW_WordAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */; };
+		2E55BCD21E5320B2003CBB30 /* IW_SharedTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */; };
+		2E55BCD51E53225F003CBB30 /* IW_WordBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */; };
+		2E55BCD81E532413003CBB30 /* IW_YouDaoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E55BC8F1E52ABB2003CBB30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E55BC5D1E52AB6F003CBB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E55BC821E52ABB1003CBB30;
+			remoteInfo = iWordWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E55BC951E52ABB2003CBB30 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E55BC911E52ABB2003CBB30 /* iWordWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E55BC651E52AB6F003CBB30 /* iWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E55BC691E52AB6F003CBB30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E55BC6B1E52AB6F003CBB30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2E55BC6E1E52AB6F003CBB30 /* IW_MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IW_MainViewController.h; path = ../IW_MainViewController.h; sourceTree = "<group>"; };
+		2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IW_MainViewController.m; path = ../IW_MainViewController.m; sourceTree = "<group>"; };
+		2E55BC721E52AB6F003CBB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E55BC741E52AB6F003CBB30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E55BC771E52AB6F003CBB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E55BC791E52AB6F003CBB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iWordWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E55BC851E52ABB1003CBB30 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2E55BC881E52ABB2003CBB30 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		2E55BC891E52ABB2003CBB30 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		2E55BC8C1E52ABB2003CBB30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2E55BC8E1E52ABB2003CBB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E55BC9E1E52CDF8003CBB30 /* IW_Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IW_Header.pch; sourceTree = "<group>"; };
+		2E55BC9F1E52CECF003CBB30 /* IW_WordSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_WordSearchController.h; sourceTree = "<group>"; };
+		2E55BCA01E52CECF003CBB30 /* IW_WordSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordSearchController.m; sourceTree = "<group>"; };
+		2E55BCA21E52CEFA003CBB30 /* IW_WordHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_WordHistoryController.h; sourceTree = "<group>"; };
+		2E55BCA31E52CEFA003CBB30 /* IW_WordHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordHistoryController.m; sourceTree = "<group>"; };
+		2E55BCA51E52CF09003CBB30 /* IW_SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_SettingViewController.h; sourceTree = "<group>"; };
+		2E55BCA61E52CF09003CBB30 /* IW_SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_SettingViewController.m; sourceTree = "<group>"; };
+		2E55BCCA1E531EE0003CBB30 /* IW_DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_DBManager.h; sourceTree = "<group>"; };
+		2E55BCCB1E531EE0003CBB30 /* IW_DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_DBManager.m; sourceTree = "<group>"; };
+		2E55BCCD1E531F01003CBB30 /* IW_WordAPITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_WordAPITool.h; sourceTree = "<group>"; };
+		2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordAPITool.m; sourceTree = "<group>"; };
+		2E55BCD01E5320B2003CBB30 /* IW_SharedTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_SharedTool.h; sourceTree = "<group>"; };
+		2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_SharedTool.m; sourceTree = "<group>"; };
+		2E55BCD31E53225F003CBB30 /* IW_WordBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_WordBaseModel.h; sourceTree = "<group>"; };
+		2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordBaseModel.m; sourceTree = "<group>"; };
+		2E55BCD61E532413003CBB30 /* IW_YouDaoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_YouDaoResult.h; sourceTree = "<group>"; };
+		2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_YouDaoResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E55BC621E52AB6F003CBB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E55BC801E52ABB1003CBB30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55BC861E52ABB1003CBB30 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E55BC5C1E52AB6F003CBB30 = {
+			isa = PBXGroup;
+			children = (
+				2E55BC671E52AB6F003CBB30 /* iWord */,
+				2E55BC871E52ABB1003CBB30 /* iWordWidget */,
+				2E55BC841E52ABB1003CBB30 /* Frameworks */,
+				2E55BC661E52AB6F003CBB30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E55BC661E52AB6F003CBB30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC651E52AB6F003CBB30 /* iWord.app */,
+				2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E55BC671E52AB6F003CBB30 /* iWord */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC6B1E52AB6F003CBB30 /* AppDelegate.h */,
+				2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */,
+				2E55BC971E52CDB8003CBB30 /* Controller */,
+				2E55BC9D1E52CDB8003CBB30 /* View */,
+				2E55BC991E52CDB8003CBB30 /* Model */,
+				2E55BC9B1E52CDB8003CBB30 /* Tools */,
+				2E55BC961E52CDB8003CBB30 /* Category */,
+				2E55BC9C1E52CDB8003CBB30 /* Vendor */,
+				2E55BC9A1E52CDB8003CBB30 /* Resources */,
+				2E55BC981E52CDB8003CBB30 /* Frameworks */,
+				2E55BC711E52AB6F003CBB30 /* Main.storyboard */,
+				2E55BC741E52AB6F003CBB30 /* Assets.xcassets */,
+				2E55BC761E52AB6F003CBB30 /* LaunchScreen.storyboard */,
+				2E55BC791E52AB6F003CBB30 /* Info.plist */,
+				2E55BC681E52AB6F003CBB30 /* Supporting Files */,
+			);
+			path = iWord;
+			sourceTree = "<group>";
+		};
+		2E55BC681E52AB6F003CBB30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC691E52AB6F003CBB30 /* main.m */,
+				2E55BC9E1E52CDF8003CBB30 /* IW_Header.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E55BC841E52ABB1003CBB30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC851E52ABB1003CBB30 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E55BC871E52ABB1003CBB30 /* iWordWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC881E52ABB2003CBB30 /* TodayViewController.h */,
+				2E55BC891E52ABB2003CBB30 /* TodayViewController.m */,
+				2E55BC8B1E52ABB2003CBB30 /* MainInterface.storyboard */,
+				2E55BC8E1E52ABB2003CBB30 /* Info.plist */,
+			);
+			path = iWordWidget;
+			sourceTree = "<group>";
+		};
+		2E55BC961E52CDB8003CBB30 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2E55BC971E52CDB8003CBB30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BC6E1E52AB6F003CBB30 /* IW_MainViewController.h */,
+				2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */,
+				2E55BC9F1E52CECF003CBB30 /* IW_WordSearchController.h */,
+				2E55BCA01E52CECF003CBB30 /* IW_WordSearchController.m */,
+				2E55BCA21E52CEFA003CBB30 /* IW_WordHistoryController.h */,
+				2E55BCA31E52CEFA003CBB30 /* IW_WordHistoryController.m */,
+				2E55BCA51E52CF09003CBB30 /* IW_SettingViewController.h */,
+				2E55BCA61E52CF09003CBB30 /* IW_SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E55BC981E52CDB8003CBB30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E55BC991E52CDB8003CBB30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BCD31E53225F003CBB30 /* IW_WordBaseModel.h */,
+				2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */,
+				2E55BCD61E532413003CBB30 /* IW_YouDaoResult.h */,
+				2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E55BC9A1E52CDB8003CBB30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2E55BC9B1E52CDB8003CBB30 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2E55BCCA1E531EE0003CBB30 /* IW_DBManager.h */,
+				2E55BCCB1E531EE0003CBB30 /* IW_DBManager.m */,
+				2E55BCCD1E531F01003CBB30 /* IW_WordAPITool.h */,
+				2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */,
+				2E55BCD01E5320B2003CBB30 /* IW_SharedTool.h */,
+				2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2E55BC9C1E52CDB8003CBB30 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2E55BC9D1E52CDB8003CBB30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E55BC641E52AB6F003CBB30 /* iWord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E55BC7C1E52AB6F003CBB30 /* Build configuration list for PBXNativeTarget "iWord" */;
+			buildPhases = (
+				2E55BC611E52AB6F003CBB30 /* Sources */,
+				2E55BC621E52AB6F003CBB30 /* Frameworks */,
+				2E55BC631E52AB6F003CBB30 /* Resources */,
+				2E55BC951E52ABB2003CBB30 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E55BC901E52ABB2003CBB30 /* PBXTargetDependency */,
+			);
+			name = iWord;
+			productName = iWord;
+			productReference = 2E55BC651E52AB6F003CBB30 /* iWord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E55BC821E52ABB1003CBB30 /* iWordWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E55BC921E52ABB2003CBB30 /* Build configuration list for PBXNativeTarget "iWordWidget" */;
+			buildPhases = (
+				2E55BC7F1E52ABB1003CBB30 /* Sources */,
+				2E55BC801E52ABB1003CBB30 /* Frameworks */,
+				2E55BC811E52ABB1003CBB30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iWordWidget;
+			productName = iWordWidget;
+			productReference = 2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E55BC5D1E52AB6F003CBB30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IW_;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = shuige;
+				TargetAttributes = {
+					2E55BC641E52AB6F003CBB30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6K9PH44V6Y;
+						ProvisioningStyle = Automatic;
+					};
+					2E55BC821E52ABB1003CBB30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6K9PH44V6Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2E55BC601E52AB6F003CBB30 /* Build configuration list for PBXProject "iWord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E55BC5C1E52AB6F003CBB30;
+			productRefGroup = 2E55BC661E52AB6F003CBB30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E55BC641E52AB6F003CBB30 /* iWord */,
+				2E55BC821E52ABB1003CBB30 /* iWordWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E55BC631E52AB6F003CBB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55BC781E52AB6F003CBB30 /* LaunchScreen.storyboard in Resources */,
+				2E55BC751E52AB6F003CBB30 /* Assets.xcassets in Resources */,
+				2E55BC731E52AB6F003CBB30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E55BC811E52ABB1003CBB30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55BC8D1E52ABB2003CBB30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E55BC611E52AB6F003CBB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55BCD81E532413003CBB30 /* IW_YouDaoResult.m in Sources */,
+				2E55BCD51E53225F003CBB30 /* IW_WordBaseModel.m in Sources */,
+				2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */,
+				2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */,
+				2E55BCCF1E531F01003CBB30 /* IW_WordAPITool.m in Sources */,
+				2E55BCD21E5320B2003CBB30 /* IW_SharedTool.m in Sources */,
+				2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */,
+				2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */,
+				2E55BCCC1E531EE0003CBB30 /* IW_DBManager.m in Sources */,
+				2E55BCA41E52CEFA003CBB30 /* IW_WordHistoryController.m in Sources */,
+				2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E55BC7F1E52ABB1003CBB30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E55BC8A1E52ABB2003CBB30 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E55BC901E52ABB2003CBB30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E55BC821E52ABB1003CBB30 /* iWordWidget */;
+			targetProxy = 2E55BC8F1E52ABB2003CBB30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E55BC711E52AB6F003CBB30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E55BC721E52AB6F003CBB30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E55BC761E52AB6F003CBB30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E55BC771E52AB6F003CBB30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E55BC8B1E52ABB2003CBB30 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E55BC8C1E52ABB2003CBB30 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E55BC7A1E52AB6F003CBB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E55BC7B1E52AB6F003CBB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E55BC7D1E52AB6F003CBB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				GCC_PREFIX_HEADER = /Users/kanewang/Documents/2017/iWord/iWord/iWord/iWord/IW_Header.pch;
+				INFOPLIST_FILE = iWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E55BC7E1E52AB6F003CBB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				GCC_PREFIX_HEADER = /Users/kanewang/Documents/2017/iWord/iWord/iWord/iWord/IW_Header.pch;
+				INFOPLIST_FILE = iWord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E55BC931E52ABB2003CBB30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = iWordWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord.iWordWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E55BC941E52ABB2003CBB30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = iWordWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord.iWordWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E55BC601E52AB6F003CBB30 /* Build configuration list for PBXProject "iWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E55BC7A1E52AB6F003CBB30 /* Debug */,
+				2E55BC7B1E52AB6F003CBB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E55BC7C1E52AB6F003CBB30 /* Build configuration list for PBXNativeTarget "iWord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E55BC7D1E52AB6F003CBB30 /* Debug */,
+				2E55BC7E1E52AB6F003CBB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E55BC921E52ABB2003CBB30 /* Build configuration list for PBXNativeTarget "iWordWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E55BC931E52ABB2003CBB30 /* Debug */,
+				2E55BC941E52ABB2003CBB30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E55BC5D1E52AB6F003CBB30 /* Project object */;
+}
