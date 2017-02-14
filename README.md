@@ -17,3 +17,5 @@
 (金山词霸)[http://open.iciba.com/?c=api]
 
 （韦氏词典)[http://www.dictionaryapi.com/]
+
+3.代码
