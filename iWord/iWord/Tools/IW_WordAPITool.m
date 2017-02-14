@@ -7,6 +7,7 @@
 //
 
 #import "IW_WordAPITool.h"
+#import "AFNetworking.h"
 
 static IW_WordAPITool *tool = nil;
 
@@ -57,9 +58,45 @@ static IW_WordAPITool *tool = nil;
 
 
 //公用请求方法
-- (void)queryWordOfUrl:(NSString*)url resultHandle:(void(^)(NSDictionary *resultDict, NSError *error))resultBlock {
+- (void)queryWordOfUrl:(NSString*)urlString resultHandle:(void(^)(NSDictionary *resultDict, NSError *error))resultBlock {
     
     
+    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:sessionConfig];
+    NSURL *url = [NSURL URLWithString:[urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+        
+        NSLog(@"%@",response);
+        NSLog(@"%@",responseObject);
+        NSLog(@"%@",error);
+    }];
+    [task resume];
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

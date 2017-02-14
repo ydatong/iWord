@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "IW_SharedTool.h"
+#import "IW_WordBaseModel.h"
 
 typedef void (^ResultBlock) (IW_WordBaseModel *resultModel , NSError *error);
 

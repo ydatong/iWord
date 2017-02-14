@@ -8,4 +8,4 @@
 
 #import "IW_SharedTool.h"
 
-NSString *const IW_YouDaoApi = @" http://fanyi.youdao.com/openapi.do?keyfrom=iWord-2017&key=608162978&type=data&doctype=<doctype>&version=1.1&q=";
+NSString *const IW_YouDaoApi = @" http://fanyi.youdao.com/openapi.do?keyfrom=iWord-2017&key=608162978&type=data&doctype=json&version=1.1&q=";
