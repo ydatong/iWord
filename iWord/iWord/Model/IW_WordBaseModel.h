@@ -19,7 +19,8 @@ typedef NS_ENUM(NSInteger, IWApiType) {
 @property (nonatomic, copy) NSString *word;
 @property (nonatomic, copy) NSString *wordId;
 @property (nonatomic, strong) NSArray *explains;
-@property (nonatomic, copy)  NSString *explainString;
+@property (nonatomic, copy , readonly)  NSString *explainString;
+@property (nonatomic, copy ,readonly)  NSString *compactExplainString; //today widget下compact模式没有换行的解释
 @property (nonatomic, copy) NSString *phoneticAM; //美式音标
 @property (nonatomic, copy) NSString *phoneticUK; //英式音标
 /**/

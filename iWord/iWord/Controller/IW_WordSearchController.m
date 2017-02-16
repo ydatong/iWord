@@ -30,6 +30,12 @@
     [self setupUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -62,6 +68,38 @@
     [_inputTextField resignFirstResponder];
 }
 
+//从today widget启动app
+- (void)handleAppLanuchByTodayWidget {
+    
+    if ([IW_AppManager defaultManager].launchType) {
+        switch ([IW_AppManager defaultManager].launchType) {
+            case IW_LaunchTypeQuery:
+            {
+                [_inputTextField becomeFirstResponder];
+            }
+                break;
+            case IW_LaunchTypeList:
+            {
+                
+            }
+                break;
+            case IW_LaunchTypeExplain:
+            {
+                [[IW_WordAPITool sharedTool] queryWord:@"test"
+                                          resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [_wordView setWordModel:resultModel];
+                    });
+                }];
+            }
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+
 
 #pragma mark - UITableView Delegate & Datasource
 
@@ -91,7 +129,9 @@
     [[IW_WordAPITool sharedTool] queryWord:_word
                                withApiType:_ApiType
                               resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
-                                      [_wordView setWordModel:resultModel];
+                                  dispatch_async(dispatch_get_main_queue(), ^{
+                                     [_wordView setWordModel:resultModel];
+                                  });
                               }];
     
     return YES;

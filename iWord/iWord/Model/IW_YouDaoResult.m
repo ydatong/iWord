@@ -41,4 +41,15 @@
     return [NSString stringWithFormat:@"%@",str];
 }
 
+- (NSString*)compactExplainString {
+    
+    NSMutableString *str = [NSMutableString string];
+    
+    for (int i = 0 ; i < self.explains.count; i++) {
+        [str appendString:self.explains[i]];
+        if (i != self.explains.count -1) [str appendString:@" "];
+    }
+    return [NSString stringWithFormat:@"%@",str];
+}
+
 @end

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11760" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -43,41 +43,60 @@
                                     <action selector="openWordList:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ytv-eQ-TAo"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGu-Rp-Dsg">
-                                <rect key="frame" x="10" y="53" width="300" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGu-Rp-Dsg">
+                                <rect key="frame" x="10" y="45" width="300" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apr-E9-1Te">
-                                <rect key="frame" x="275" y="20" width="25" height="25"/>
+                                <rect key="frame" x="285" y="10" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="kZR-7K-XQs"/>
                                     <constraint firstAttribute="width" constant="25" id="mQj-fs-5d5"/>
                                 </constraints>
                                 <state key="normal" image="favor1_red"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-Wa-ksu">
-                                <rect key="frame" x="10" y="5" width="42" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVM-Wa-ksu">
+                                <rect key="frame" x="10" y="10" width="225" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Qoh-3L-uoG"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05g-4J-SKF">
+                                <rect key="frame" x="10" y="45" width="300" height="145"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="I86-kT-Epf" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" id="6ag-3B-9qL"/>
+                            <constraint firstItem="05g-4J-SKF" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="9WY-Va-7Sa"/>
                             <constraint firstItem="kVM-Wa-ksu" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="9iC-Jm-pDt"/>
-                            <constraint firstItem="apr-E9-1Te" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="20" id="IIO-ZW-efB"/>
+                            <constraint firstAttribute="trailing" secondItem="05g-4J-SKF" secondAttribute="trailing" constant="10" id="BrX-uU-mKh"/>
+                            <constraint firstItem="4SI-hF-XOj" firstAttribute="top" secondItem="aGu-Rp-Dsg" secondAttribute="bottom" constant="10" id="Gkx-8E-G28"/>
+                            <constraint firstItem="apr-E9-1Te" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="10" id="IIO-ZW-efB"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="I86-kT-Epf" secondAttribute="bottom" constant="20" id="Mzf-fb-VKh"/>
+                            <constraint firstAttribute="trailing" secondItem="aGu-Rp-Dsg" secondAttribute="trailing" constant="10" id="NkC-L6-FW7"/>
                             <constraint firstAttribute="trailing" secondItem="4SI-hF-XOj" secondAttribute="trailing" constant="20" id="Ohi-s3-Qsu"/>
                             <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="4SI-hF-XOj" secondAttribute="bottom" constant="20" id="SXu-9E-e8a"/>
-                            <constraint firstAttribute="trailing" secondItem="apr-E9-1Te" secondAttribute="trailing" constant="20" id="cjh-jJ-821"/>
-                            <constraint firstItem="kVM-Wa-ksu" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="5" id="joU-yA-daL"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="05g-4J-SKF" secondAttribute="bottom" constant="10" id="Urj-8i-rs2"/>
+                            <constraint firstItem="aGu-Rp-Dsg" firstAttribute="top" secondItem="kVM-Wa-ksu" secondAttribute="bottom" constant="10" id="YcH-5u-Ino"/>
+                            <constraint firstAttribute="trailing" secondItem="apr-E9-1Te" secondAttribute="trailing" constant="10" id="cjh-jJ-821"/>
+                            <constraint firstItem="apr-E9-1Te" firstAttribute="leading" secondItem="kVM-Wa-ksu" secondAttribute="trailing" constant="50" id="d6X-UJ-o7C"/>
+                            <constraint firstItem="kVM-Wa-ksu" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="10" id="joU-yA-daL"/>
+                            <constraint firstItem="05g-4J-SKF" firstAttribute="top" secondItem="kVM-Wa-ksu" secondAttribute="bottom" constant="10" id="qym-E7-E4V"/>
+                            <constraint firstItem="aGu-Rp-Dsg" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="wRy-kV-IXG"/>
                         </constraints>
+                        <connections>
+                            <action selector="showWordExplain:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="n2Q-6J-c6E"/>
+                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -86,7 +105,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="200"/>
                     <connections>
+                        <outlet property="compactExplainTextView" destination="05g-4J-SKF" id="H5f-Rh-r6K"/>
                         <outlet property="explainTextView" destination="aGu-Rp-Dsg" id="iaw-B2-uhF"/>
+                        <outlet property="queryWordBtn" destination="I86-kT-Epf" id="CZB-xc-mLy"/>
+                        <outlet property="wordLabel" destination="kVM-Wa-ksu" id="7Fo-ka-bLu"/>
+                        <outlet property="wordlistBtn" destination="4SI-hF-XOj" id="BHh-Eb-ldR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

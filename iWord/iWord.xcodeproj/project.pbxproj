@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253ACA671E55F5520060BF7B /* IW_AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA661E55F5520060BF7B /* IW_AppManager.m */; };
 		2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC691E52AB6F003CBB30 /* main.m */; };
 		2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */; };
 		2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */; };
@@ -150,6 +151,8 @@
 		253ACA531E5343980060BF7B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		253ACA541E5343980060BF7B /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		253ACA551E5343980060BF7B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		253ACA651E55F5520060BF7B /* IW_AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_AppManager.h; sourceTree = "<group>"; };
+		253ACA661E55F5520060BF7B /* IW_AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_AppManager.m; sourceTree = "<group>"; };
 		2E55BC651E52AB6F003CBB30 /* iWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E55BC691E52AB6F003CBB30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E55BC6B1E52AB6F003CBB30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -389,6 +392,8 @@
 				2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */,
 				2E55BCD01E5320B2003CBB30 /* IW_SharedTool.h */,
 				2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */,
+				253ACA651E55F5520060BF7B /* IW_AppManager.h */,
+				253ACA661E55F5520060BF7B /* IW_AppManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -527,12 +532,12 @@
 				TargetAttributes = {
 					2E55BC641E52AB6F003CBB30 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6K9PH44V6Y;
+						DevelopmentTeam = 38842EP984;
 						ProvisioningStyle = Automatic;
 					};
 					2E55BC821E52ABB1003CBB30 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6K9PH44V6Y;
+						DevelopmentTeam = 38842EP984;
 						ProvisioningStyle = Automatic;
 					};
 					2EB772611E55718F00FB3D1B = {
@@ -602,6 +607,7 @@
 				2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */,
 				2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */,
 				2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */,
+				253ACA671E55F5520060BF7B /* IW_AppManager.m in Sources */,
 				2E55BCA41E52CEFA003CBB30 /* IW_WordHistoryController.m in Sources */,
 				2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */,
 			);
@@ -778,12 +784,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DEVELOPMENT_TEAM = 38842EP984;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iWord/IW_Header.pch";
 				INFOPLIST_FILE = iWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -792,12 +798,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DEVELOPMENT_TEAM = 38842EP984;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iWord/IW_Header.pch";
 				INFOPLIST_FILE = iWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -805,12 +811,12 @@
 		2E55BC931E52ABB2003CBB30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DEVELOPMENT_TEAM = 38842EP984;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = iWordWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord.iWordWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord1.iWordWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -819,12 +825,12 @@
 		2E55BC941E52ABB2003CBB30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DEVELOPMENT_TEAM = 38842EP984;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = iWordWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord.iWordWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.iWord1.iWordWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -911,6 +917,7 @@
 				2EB7726D1E55718F00FB3D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

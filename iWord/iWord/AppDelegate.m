@@ -47,5 +47,19 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    if ([url.absoluteString hasPrefix:@"todaywidget://"]) {
+        if ([url.absoluteString hasSuffix:@"query"]) { //查单词
+            [IW_AppManager defaultManager].launchType = IW_LaunchTypeQuery;
+        }else if ([url.absoluteString hasSuffix:@"list"]) { //单词列表
+            [IW_AppManager defaultManager].launchType = IW_LaunchTypeList;
+        }else if ([url.absoluteString hasSuffix:@"explain"]){ //单词解释
+            [IW_AppManager defaultManager].launchType = IW_LaunchTypeExplain;
+        }
+    }
+    return YES;
+}
+
 
 @end

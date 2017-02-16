@@ -20,7 +20,11 @@
 {
     
     __weak IBOutlet UITextView *explainTextView;
-
+    IBOutlet UITextView *compactExplainTextView;
+    IBOutlet UIButton *wordlistBtn;
+    IBOutlet UIButton *queryWordBtn;
+    IBOutlet UILabel *wordLabel;
+    IW_WordBaseModel *currentWord;
 }
 
 @end
@@ -30,6 +34,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
+    compactExplainTextView.hidden = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pasteboardChanged:) name:UIPasteboardChangedNotification object:nil];
 }
 
@@ -37,21 +42,26 @@
     
     [super viewWillAppear:animated];
     NSString *word = [UIPasteboard generalPasteboard].string;
-    NSString *savedWord = [[NSUserDefaults standardUserDefaults] valueForKey:@"savedWord"];
-    if (word) {
-        if (savedWord && [word isEqualToString:savedWord]) {
-            return;
+    if (!word) {
+        word = [[NSUserDefaults standardUserDefaults] objectForKey:@"savedWord"];
+        if (!word) {
+            word = @"test";
         }
-        [[NSUserDefaults standardUserDefaults] setObject:word forKey:@"savedWord"];
-        [[IW_WordAPITool sharedTool] queryWord:word resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                explainTextView.text = resultModel.explainString;
-            });
-            
-        }];
     }
+    wordLabel.text = word;
+    [[NSUserDefaults standardUserDefaults] setObject:word forKey:@"savedWord"];
+    [[IW_WordAPITool sharedTool] queryWord:word resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
+        
+        currentWord = resultModel;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (self.extensionContext.widgetActiveDisplayMode == NCWidgetDisplayModeCompact) {
+                compactExplainTextView.text = resultModel.compactExplainString;
+            }else{
+                explainTextView.text = resultModel.explainString;
+            }
+        });
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,9 +83,23 @@
 - (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize {
     
     if (activeDisplayMode == NCWidgetDisplayModeCompact) {
-        self.preferredContentSize = CGSizeMake(0, 200);
+        self.preferredContentSize = maxSize;
+        compactExplainTextView.hidden = NO;
+        explainTextView.hidden = YES;
+        queryWordBtn.hidden = YES;
+        wordlistBtn.hidden = YES;
     }else{
-        self.preferredContentSize = CGSizeMake(0, 300);
+        self.preferredContentSize = CGSizeMake(maxSize.width, 200);
+        compactExplainTextView.hidden = YES;
+        explainTextView.hidden = NO;
+        queryWordBtn.hidden = NO;
+        wordlistBtn.hidden = NO;
+    }
+    
+    if (activeDisplayMode == NCWidgetDisplayModeCompact) {
+        compactExplainTextView.text = currentWord.compactExplainString;
+    }else{
+        explainTextView.text = currentWord.explainString;
     }
 }
 
@@ -86,12 +110,18 @@
 
 - (IBAction)queryWord:(id)sender {
     
-    
+    [self.extensionContext  openURL:[NSURL URLWithString:@"todaywidget://query" ]completionHandler:nil];
 }
 
 
 - (IBAction)openWordList:(id)sender {
     
+    [self.extensionContext  openURL:[NSURL URLWithString:@"todaywidget://list" ]completionHandler:nil];
+}
+
+- (IBAction)showWordExplain:(id)sender {
+
+    [self.extensionContext  openURL:[NSURL URLWithString:@"todaywidget://explain" ]completionHandler:nil];
 }
 
 @end
