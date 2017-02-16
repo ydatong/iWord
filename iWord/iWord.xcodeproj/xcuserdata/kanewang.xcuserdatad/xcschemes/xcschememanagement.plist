@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IWKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>IWShareKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>iWord.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,21 @@
 			<true/>
 		</dict>
 		<key>2E55BC821E52ABB1003CBB30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB772291E55709D00FB3D1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB7723B1E55710000FB3D1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2EB772611E55718F00FB3D1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

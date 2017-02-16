@@ -10,5 +10,13 @@
 
 @implementation IW_WordBaseModel
 
++ (instancetype)modelWithDict:(NSDictionary *)dict {
+
+    
+    return [[self alloc] init];
+}
+
+
+
 
 @end

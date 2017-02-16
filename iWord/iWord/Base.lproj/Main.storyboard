@@ -85,9 +85,42 @@
                     <view key="view" contentMode="scaleToFill" id="jSa-nY-SO3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="E4R-YT-xEi">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lhz-32-Uxb" firstAttribute="top" secondItem="E4R-YT-xEi" secondAttribute="bottom" id="8gL-Ug-D2l"/>
+                            <constraint firstAttribute="trailing" secondItem="E4R-YT-xEi" secondAttribute="trailing" id="Dyh-Ph-4em"/>
+                            <constraint firstItem="E4R-YT-xEi" firstAttribute="top" secondItem="VEF-ba-qtq" secondAttribute="bottom" id="F8A-nz-7fI"/>
+                            <constraint firstItem="E4R-YT-xEi" firstAttribute="leading" secondItem="jSa-nY-SO3" secondAttribute="leading" id="Uzl-SE-juJ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yU0-xc-1R7"/>
+                    <navigationItem key="navigationItem" id="yU0-xc-1R7">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="字典" id="j6T-eG-cxe">
+                            <connections>
+                                <action selector="switchApi:" destination="DZt-lu-Nbc" id="W75-Lf-yW3"/>
+                            </connections>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入查找内容" minimumFontSize="17" clearButtonMode="whileEditing" id="nO0-U9-ZnT">
+                            <rect key="frame" x="57" y="7" width="310" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="DZt-lu-Nbc" id="5t2-TL-kMQ"/>
+                            </connections>
+                        </textField>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_inputTextField" destination="nO0-U9-ZnT" id="OKF-Bc-gWV"/>
+                        <outlet property="_tableView" destination="E4R-YT-xEi" id="arK-Js-QP8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pku-mF-NaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

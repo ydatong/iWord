@@ -36,11 +36,16 @@ static IW_WordAPITool *tool = nil;
         case IWApiTypeYouDao:
         {
             [self youDaoQuery:word resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
-                
+                resultBlock(resultModel,error);
             }];
         }
             break;
-            
+        case IWApiTypeJinShan:{
+            [self jinShanQuery:word resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
+                resultBlock(resultModel,error);
+            }];
+        }
+            break;
         default:
             break;
     }
@@ -51,8 +56,23 @@ static IW_WordAPITool *tool = nil;
     
     [self queryWordOfUrl:[NSString stringWithFormat:@"%@%@",IW_YouDaoApi,word]  resultHandle:^(NSDictionary *resultDict, NSError *error) {
        
-        IW_YouDaoResult *result = [IW_YouDaoResult modelWithDict:resultDict];
-        resultBlock(result,error);
+        if (!error && [resultDict[@"errorCode"] integerValue] == 0) {
+            IW_YouDaoResult *result = [IW_YouDaoResult modelWithDict:resultDict];
+            resultBlock(result,error);
+        }
+        
+    }];
+}
+
+//金山api请求
+- (void)jinShanQuery:(NSString*)word resultHandle:(ResultBlock)resultBlock{
+    
+    [self queryWordOfUrl:[NSString stringWithFormat:@"%@%@",IW_JinShanApi,word]  resultHandle:^(NSDictionary *resultDict, NSError *error) {
+        
+        if (!error) {
+            IW_JinShanResult *result = [IW_JinShanResult modelWithDict:resultDict];
+            resultBlock(result,error);
+        }
     }];
 }
 
@@ -60,16 +80,15 @@ static IW_WordAPITool *tool = nil;
 //公用请求方法
 - (void)queryWordOfUrl:(NSString*)urlString resultHandle:(void(^)(NSDictionary *resultDict, NSError *error))resultBlock {
     
-    
+    NSString *str = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];;
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:sessionConfig];
-    NSURL *url = [NSURL URLWithString:[urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:str]];
+    NSURLSessionDataTask *task = [manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
-        NSLog(@"%@",response);
-        NSLog(@"%@",responseObject);
-        NSLog(@"%@",error);
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            resultBlock(responseObject,error);
+        }
     }];
     [task resume];
 }

@@ -10,4 +10,7 @@
 
 @interface IW_YouDaoResult : IW_WordBaseModel
 
+@property (nonatomic, strong) NSArray *webExplains; //网络释义
+@property (nonatomic, copy)   NSString *translation;
+
 @end

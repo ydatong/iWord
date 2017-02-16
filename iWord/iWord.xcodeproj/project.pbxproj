@@ -7,21 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		253ACA561E5343980060BF7B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA351E5343980060BF7B /* AFHTTPSessionManager.m */; };
-		253ACA571E5343980060BF7B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA381E5343980060BF7B /* AFNetworkReachabilityManager.m */; };
-		253ACA581E5343980060BF7B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3A1E5343980060BF7B /* AFSecurityPolicy.m */; };
-		253ACA591E5343980060BF7B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3C1E5343980060BF7B /* AFURLRequestSerialization.m */; };
-		253ACA5A1E5343980060BF7B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3E1E5343980060BF7B /* AFURLResponseSerialization.m */; };
-		253ACA5B1E5343980060BF7B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA401E5343980060BF7B /* AFURLSessionManager.m */; };
-		253ACA5C1E5343980060BF7B /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA431E5343980060BF7B /* AFAutoPurgingImageCache.m */; };
-		253ACA5D1E5343980060BF7B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA451E5343980060BF7B /* AFImageDownloader.m */; };
-		253ACA5E1E5343980060BF7B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA471E5343980060BF7B /* AFNetworkActivityIndicatorManager.m */; };
-		253ACA5F1E5343980060BF7B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA491E5343980060BF7B /* UIActivityIndicatorView+AFNetworking.m */; };
-		253ACA601E5343980060BF7B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA4B1E5343980060BF7B /* UIButton+AFNetworking.m */; };
-		253ACA611E5343980060BF7B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA4E1E5343980060BF7B /* UIImageView+AFNetworking.m */; };
-		253ACA621E5343980060BF7B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA511E5343980060BF7B /* UIProgressView+AFNetworking.m */; };
-		253ACA631E5343980060BF7B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA531E5343980060BF7B /* UIRefreshControl+AFNetworking.m */; };
-		253ACA641E5343980060BF7B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA551E5343980060BF7B /* UIWebView+AFNetworking.m */; };
 		2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC691E52AB6F003CBB30 /* main.m */; };
 		2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */; };
 		2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */; };
@@ -35,11 +20,58 @@
 		2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA01E52CECF003CBB30 /* IW_WordSearchController.m */; };
 		2E55BCA41E52CEFA003CBB30 /* IW_WordHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA31E52CEFA003CBB30 /* IW_WordHistoryController.m */; };
 		2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCA61E52CF09003CBB30 /* IW_SettingViewController.m */; };
-		2E55BCCC1E531EE0003CBB30 /* IW_DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCB1E531EE0003CBB30 /* IW_DBManager.m */; };
-		2E55BCCF1E531F01003CBB30 /* IW_WordAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */; };
-		2E55BCD21E5320B2003CBB30 /* IW_SharedTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */; };
-		2E55BCD51E53225F003CBB30 /* IW_WordBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */; };
-		2E55BCD81E532413003CBB30 /* IW_YouDaoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */; };
+		2EB772661E55718F00FB3D1B /* IWShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EB772641E55718F00FB3D1B /* IWShareKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EB772691E55718F00FB3D1B /* IWShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB772621E55718F00FB3D1B /* IWShareKit.framework */; };
+		2EB7726A1E55718F00FB3D1B /* IWShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB772621E55718F00FB3D1B /* IWShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2EB7726E1E5571AD00FB3D1B /* IWShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB772621E55718F00FB3D1B /* IWShareKit.framework */; };
+		2EB7726F1E5571C700FB3D1B /* IW_DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E55BCCA1E531EE0003CBB30 /* IW_DBManager.h */; };
+		2EB772701E5571CB00FB3D1B /* IW_DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCB1E531EE0003CBB30 /* IW_DBManager.m */; };
+		2EB772711E5571CE00FB3D1B /* IW_WordAPITool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E55BCCD1E531F01003CBB30 /* IW_WordAPITool.h */; };
+		2EB772721E5571D100FB3D1B /* IW_WordAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCCE1E531F01003CBB30 /* IW_WordAPITool.m */; };
+		2EB772741E5571D800FB3D1B /* IW_SharedTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E55BCD01E5320B2003CBB30 /* IW_SharedTool.h */; };
+		2EB772751E5571DB00FB3D1B /* IW_SharedTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */; };
+		2EB772761E5571E500FB3D1B /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA341E5343980060BF7B /* AFHTTPSessionManager.h */; };
+		2EB772771E5571E800FB3D1B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA351E5343980060BF7B /* AFHTTPSessionManager.m */; };
+		2EB772781E5571EB00FB3D1B /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA361E5343980060BF7B /* AFNetworking.h */; };
+		2EB772791E5571EE00FB3D1B /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA371E5343980060BF7B /* AFNetworkReachabilityManager.h */; };
+		2EB7727A1E5571F000FB3D1B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA381E5343980060BF7B /* AFNetworkReachabilityManager.m */; };
+		2EB7727B1E5571F300FB3D1B /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA391E5343980060BF7B /* AFSecurityPolicy.h */; };
+		2EB7727C1E5571F600FB3D1B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3A1E5343980060BF7B /* AFSecurityPolicy.m */; };
+		2EB7727D1E5571F900FB3D1B /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA3B1E5343980060BF7B /* AFURLRequestSerialization.h */; };
+		2EB7727E1E5571FD00FB3D1B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3C1E5343980060BF7B /* AFURLRequestSerialization.m */; };
+		2EB7727F1E5571FF00FB3D1B /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA3D1E5343980060BF7B /* AFURLResponseSerialization.h */; };
+		2EB772801E55720300FB3D1B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA3E1E5343980060BF7B /* AFURLResponseSerialization.m */; };
+		2EB772811E55720600FB3D1B /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA3F1E5343980060BF7B /* AFURLSessionManager.h */; };
+		2EB772821E55720A00FB3D1B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA401E5343980060BF7B /* AFURLSessionManager.m */; };
+		2EB772831E55721100FB3D1B /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA421E5343980060BF7B /* AFAutoPurgingImageCache.h */; };
+		2EB772841E55721300FB3D1B /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA431E5343980060BF7B /* AFAutoPurgingImageCache.m */; };
+		2EB772851E55721500FB3D1B /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA441E5343980060BF7B /* AFImageDownloader.h */; };
+		2EB772861E55721800FB3D1B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA451E5343980060BF7B /* AFImageDownloader.m */; };
+		2EB772871E55721B00FB3D1B /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA461E5343980060BF7B /* AFNetworkActivityIndicatorManager.h */; };
+		2EB772881E55721E00FB3D1B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA471E5343980060BF7B /* AFNetworkActivityIndicatorManager.m */; };
+		2EB772891E55722000FB3D1B /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA481E5343980060BF7B /* UIActivityIndicatorView+AFNetworking.h */; };
+		2EB7728A1E55722200FB3D1B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA491E5343980060BF7B /* UIActivityIndicatorView+AFNetworking.m */; };
+		2EB7728B1E55722500FB3D1B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA4A1E5343980060BF7B /* UIButton+AFNetworking.h */; };
+		2EB7728C1E55722800FB3D1B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA4B1E5343980060BF7B /* UIButton+AFNetworking.m */; };
+		2EB7728D1E55722A00FB3D1B /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA4C1E5343980060BF7B /* UIImage+AFNetworking.h */; };
+		2EB7728E1E55722D00FB3D1B /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA4D1E5343980060BF7B /* UIImageView+AFNetworking.h */; };
+		2EB772901E55723000FB3D1B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA4E1E5343980060BF7B /* UIImageView+AFNetworking.m */; };
+		2EB772911E55723300FB3D1B /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA4F1E5343980060BF7B /* UIKit+AFNetworking.h */; };
+		2EB772921E55723600FB3D1B /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA501E5343980060BF7B /* UIProgressView+AFNetworking.h */; };
+		2EB772931E55723800FB3D1B /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA511E5343980060BF7B /* UIProgressView+AFNetworking.m */; };
+		2EB772941E55723A00FB3D1B /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA521E5343980060BF7B /* UIRefreshControl+AFNetworking.h */; };
+		2EB772951E55723D00FB3D1B /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA531E5343980060BF7B /* UIRefreshControl+AFNetworking.m */; };
+		2EB772961E55723F00FB3D1B /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 253ACA541E5343980060BF7B /* UIWebView+AFNetworking.h */; };
+		2EB772971E55724100FB3D1B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA551E5343980060BF7B /* UIWebView+AFNetworking.m */; };
+		2EB772981E55724900FB3D1B /* IW_WordBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E55BCD31E53225F003CBB30 /* IW_WordBaseModel.h */; };
+		2EB772991E55724E00FB3D1B /* IW_WordBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */; };
+		2EB7729A1E55725000FB3D1B /* IW_YouDaoResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E55BCD61E532413003CBB30 /* IW_YouDaoResult.h */; };
+		2EB7729B1E55725300FB3D1B /* IW_YouDaoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */; };
+		2EB7729C1E55725500FB3D1B /* IW_JinShanResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBAB56E1E53FE9D0092B75E /* IW_JinShanResult.h */; };
+		2EB7729D1E55725800FB3D1B /* IW_JinShanResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAB56F1E53FE9D0092B75E /* IW_JinShanResult.m */; };
+		2EB772A11E55744E00FB3D1B /* IW_WordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAB5721E543B6B0092B75E /* IW_WordView.m */; };
+		2EB772A21E55745100FB3D1B /* IW_WordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBAB5741E543B790092B75E /* IW_WordView.xib */; };
+		2EBAB5761E5471200092B75E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E55BC741E52AB6F003CBB30 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +81,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2E55BC821E52ABB1003CBB30;
 			remoteInfo = iWordWidget;
+		};
+		2EB772671E55718F00FB3D1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E55BC5D1E52AB6F003CBB30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EB772611E55718F00FB3D1B;
+			remoteInfo = IWShareKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,6 +101,17 @@
 				2E55BC911E52ABB2003CBB30 /* iWordWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EB772361E55709D00FB3D1B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2EB7726A1E55718F00FB3D1B /* IWShareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -133,6 +183,14 @@
 		2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordBaseModel.m; sourceTree = "<group>"; };
 		2E55BCD61E532413003CBB30 /* IW_YouDaoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_YouDaoResult.h; sourceTree = "<group>"; };
 		2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_YouDaoResult.m; sourceTree = "<group>"; };
+		2EB772621E55718F00FB3D1B /* IWShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IWShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB772641E55718F00FB3D1B /* IWShareKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IWShareKit.h; sourceTree = "<group>"; };
+		2EB772651E55718F00FB3D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBAB56E1E53FE9D0092B75E /* IW_JinShanResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_JinShanResult.h; sourceTree = "<group>"; };
+		2EBAB56F1E53FE9D0092B75E /* IW_JinShanResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_JinShanResult.m; sourceTree = "<group>"; };
+		2EBAB5711E543B6B0092B75E /* IW_WordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_WordView.h; sourceTree = "<group>"; };
+		2EBAB5721E543B6B0092B75E /* IW_WordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_WordView.m; sourceTree = "<group>"; };
+		2EBAB5741E543B790092B75E /* IW_WordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IW_WordView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB772691E55718F00FB3D1B /* IWShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +206,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB7726E1E5571AD00FB3D1B /* IWShareKit.framework in Frameworks */,
 				2E55BC861E52ABB1003CBB30 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EB7725E1E55718F00FB3D1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +273,7 @@
 			children = (
 				2E55BC671E52AB6F003CBB30 /* iWord */,
 				2E55BC871E52ABB1003CBB30 /* iWordWidget */,
+				2EB772631E55718F00FB3D1B /* IWShareKit */,
 				2E55BC841E52ABB1003CBB30 /* Frameworks */,
 				2E55BC661E52AB6F003CBB30 /* Products */,
 			);
@@ -216,6 +284,7 @@
 			children = (
 				2E55BC651E52AB6F003CBB30 /* iWord.app */,
 				2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */,
+				2EB772621E55718F00FB3D1B /* IWShareKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,7 +301,6 @@
 				2E55BC961E52CDB8003CBB30 /* Category */,
 				2E55BC9C1E52CDB8003CBB30 /* Vendor */,
 				2E55BC9A1E52CDB8003CBB30 /* Resources */,
-				2E55BC981E52CDB8003CBB30 /* Frameworks */,
 				2E55BC711E52AB6F003CBB30 /* Main.storyboard */,
 				2E55BC741E52AB6F003CBB30 /* Assets.xcassets */,
 				2E55BC761E52AB6F003CBB30 /* LaunchScreen.storyboard */,
@@ -292,13 +360,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		2E55BC981E52CDB8003CBB30 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		2E55BC991E52CDB8003CBB30 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +367,8 @@
 				2E55BCD41E53225F003CBB30 /* IW_WordBaseModel.m */,
 				2E55BCD61E532413003CBB30 /* IW_YouDaoResult.h */,
 				2E55BCD71E532413003CBB30 /* IW_YouDaoResult.m */,
+				2EBAB56E1E53FE9D0092B75E /* IW_JinShanResult.h */,
+				2EBAB56F1E53FE9D0092B75E /* IW_JinShanResult.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,11 +405,58 @@
 		2E55BC9D1E52CDB8003CBB30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2EBAB5711E543B6B0092B75E /* IW_WordView.h */,
+				2EBAB5721E543B6B0092B75E /* IW_WordView.m */,
+				2EBAB5741E543B790092B75E /* IW_WordView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
+		2EB772631E55718F00FB3D1B /* IWShareKit */ = {
+			isa = PBXGroup;
+			children = (
+				2EB772641E55718F00FB3D1B /* IWShareKit.h */,
+				2EB772651E55718F00FB3D1B /* Info.plist */,
+			);
+			path = IWShareKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2EB7725F1E55718F00FB3D1B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB7728E1E55722D00FB3D1B /* UIImageView+AFNetworking.h in Headers */,
+				2EB772811E55720600FB3D1B /* AFURLSessionManager.h in Headers */,
+				2EB7728B1E55722500FB3D1B /* UIButton+AFNetworking.h in Headers */,
+				2EB7727D1E5571F900FB3D1B /* AFURLRequestSerialization.h in Headers */,
+				2EB772791E5571EE00FB3D1B /* AFNetworkReachabilityManager.h in Headers */,
+				2EB7728D1E55722A00FB3D1B /* UIImage+AFNetworking.h in Headers */,
+				2EB7729A1E55725000FB3D1B /* IW_YouDaoResult.h in Headers */,
+				2EB7726F1E5571C700FB3D1B /* IW_DBManager.h in Headers */,
+				2EB772911E55723300FB3D1B /* UIKit+AFNetworking.h in Headers */,
+				2EB772741E5571D800FB3D1B /* IW_SharedTool.h in Headers */,
+				2EB772981E55724900FB3D1B /* IW_WordBaseModel.h in Headers */,
+				2EB772761E5571E500FB3D1B /* AFHTTPSessionManager.h in Headers */,
+				2EB7729C1E55725500FB3D1B /* IW_JinShanResult.h in Headers */,
+				2EB772831E55721100FB3D1B /* AFAutoPurgingImageCache.h in Headers */,
+				2EB772661E55718F00FB3D1B /* IWShareKit.h in Headers */,
+				2EB772851E55721500FB3D1B /* AFImageDownloader.h in Headers */,
+				2EB772871E55721B00FB3D1B /* AFNetworkActivityIndicatorManager.h in Headers */,
+				2EB772941E55723A00FB3D1B /* UIRefreshControl+AFNetworking.h in Headers */,
+				2EB772711E5571CE00FB3D1B /* IW_WordAPITool.h in Headers */,
+				2EB772891E55722000FB3D1B /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2EB772781E5571EB00FB3D1B /* AFNetworking.h in Headers */,
+				2EB7727B1E5571F300FB3D1B /* AFSecurityPolicy.h in Headers */,
+				2EB772961E55723F00FB3D1B /* UIWebView+AFNetworking.h in Headers */,
+				2EB7727F1E5571FF00FB3D1B /* AFURLResponseSerialization.h in Headers */,
+				2EB772921E55723600FB3D1B /* UIProgressView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		2E55BC641E52AB6F003CBB30 /* iWord */ = {
@@ -357,11 +467,13 @@
 				2E55BC621E52AB6F003CBB30 /* Frameworks */,
 				2E55BC631E52AB6F003CBB30 /* Resources */,
 				2E55BC951E52ABB2003CBB30 /* Embed App Extensions */,
+				2EB772361E55709D00FB3D1B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2E55BC901E52ABB2003CBB30 /* PBXTargetDependency */,
+				2EB772681E55718F00FB3D1B /* PBXTargetDependency */,
 			);
 			name = iWord;
 			productName = iWord;
@@ -385,6 +497,24 @@
 			productReference = 2E55BC831E52ABB1003CBB30 /* iWordWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		2EB772611E55718F00FB3D1B /* IWShareKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EB7726B1E55718F00FB3D1B /* Build configuration list for PBXNativeTarget "IWShareKit" */;
+			buildPhases = (
+				2EB7725D1E55718F00FB3D1B /* Sources */,
+				2EB7725E1E55718F00FB3D1B /* Frameworks */,
+				2EB7725F1E55718F00FB3D1B /* Headers */,
+				2EB772601E55718F00FB3D1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IWShareKit;
+			productName = IWShareKit;
+			productReference = 2EB772621E55718F00FB3D1B /* IWShareKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -401,6 +531,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					2E55BC821E52ABB1003CBB30 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6K9PH44V6Y;
+						ProvisioningStyle = Automatic;
+					};
+					2EB772611E55718F00FB3D1B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 6K9PH44V6Y;
 						ProvisioningStyle = Automatic;
@@ -422,6 +557,7 @@
 			targets = (
 				2E55BC641E52AB6F003CBB30 /* iWord */,
 				2E55BC821E52ABB1003CBB30 /* iWordWidget */,
+				2EB772611E55718F00FB3D1B /* IWShareKit */,
 			);
 		};
 /* End PBXProject section */
@@ -433,6 +569,7 @@
 			files = (
 				2E55BC781E52AB6F003CBB30 /* LaunchScreen.storyboard in Resources */,
 				2E55BC751E52AB6F003CBB30 /* Assets.xcassets in Resources */,
+				2EB772A21E55745100FB3D1B /* IW_WordView.xib in Resources */,
 				2E55BC731E52AB6F003CBB30 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +578,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EBAB5761E5471200092B75E /* Assets.xcassets in Resources */,
 				2E55BC8D1E52ABB2003CBB30 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EB772601E55718F00FB3D1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,31 +597,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				253ACA5B1E5343980060BF7B /* AFURLSessionManager.m in Sources */,
-				253ACA581E5343980060BF7B /* AFSecurityPolicy.m in Sources */,
-				2E55BCD81E532413003CBB30 /* IW_YouDaoResult.m in Sources */,
-				253ACA571E5343980060BF7B /* AFNetworkReachabilityManager.m in Sources */,
-				253ACA5E1E5343980060BF7B /* AFNetworkActivityIndicatorManager.m in Sources */,
-				253ACA611E5343980060BF7B /* UIImageView+AFNetworking.m in Sources */,
-				2E55BCD51E53225F003CBB30 /* IW_WordBaseModel.m in Sources */,
-				253ACA5F1E5343980060BF7B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				253ACA641E5343980060BF7B /* UIWebView+AFNetworking.m in Sources */,
+				2EB772A11E55744E00FB3D1B /* IW_WordView.m in Sources */,
 				2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */,
-				253ACA561E5343980060BF7B /* AFHTTPSessionManager.m in Sources */,
 				2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */,
-				2E55BCCF1E531F01003CBB30 /* IW_WordAPITool.m in Sources */,
-				2E55BCD21E5320B2003CBB30 /* IW_SharedTool.m in Sources */,
 				2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */,
 				2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */,
-				253ACA5D1E5343980060BF7B /* AFImageDownloader.m in Sources */,
-				253ACA621E5343980060BF7B /* UIProgressView+AFNetworking.m in Sources */,
-				2E55BCCC1E531EE0003CBB30 /* IW_DBManager.m in Sources */,
-				253ACA601E5343980060BF7B /* UIButton+AFNetworking.m in Sources */,
-				253ACA591E5343980060BF7B /* AFURLRequestSerialization.m in Sources */,
 				2E55BCA41E52CEFA003CBB30 /* IW_WordHistoryController.m in Sources */,
-				253ACA5C1E5343980060BF7B /* AFAutoPurgingImageCache.m in Sources */,
-				253ACA631E5343980060BF7B /* UIRefreshControl+AFNetworking.m in Sources */,
-				253ACA5A1E5343980060BF7B /* AFURLResponseSerialization.m in Sources */,
 				2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +615,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2EB7725D1E55718F00FB3D1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB772931E55723800FB3D1B /* UIProgressView+AFNetworking.m in Sources */,
+				2EB772821E55720A00FB3D1B /* AFURLSessionManager.m in Sources */,
+				2EB772971E55724100FB3D1B /* UIWebView+AFNetworking.m in Sources */,
+				2EB772901E55723000FB3D1B /* UIImageView+AFNetworking.m in Sources */,
+				2EB7729D1E55725800FB3D1B /* IW_JinShanResult.m in Sources */,
+				2EB772751E5571DB00FB3D1B /* IW_SharedTool.m in Sources */,
+				2EB7728C1E55722800FB3D1B /* UIButton+AFNetworking.m in Sources */,
+				2EB772721E5571D100FB3D1B /* IW_WordAPITool.m in Sources */,
+				2EB7729B1E55725300FB3D1B /* IW_YouDaoResult.m in Sources */,
+				2EB7727A1E5571F000FB3D1B /* AFNetworkReachabilityManager.m in Sources */,
+				2EB772951E55723D00FB3D1B /* UIRefreshControl+AFNetworking.m in Sources */,
+				2EB772701E5571CB00FB3D1B /* IW_DBManager.m in Sources */,
+				2EB772841E55721300FB3D1B /* AFAutoPurgingImageCache.m in Sources */,
+				2EB772991E55724E00FB3D1B /* IW_WordBaseModel.m in Sources */,
+				2EB7727C1E5571F600FB3D1B /* AFSecurityPolicy.m in Sources */,
+				2EB7727E1E5571FD00FB3D1B /* AFURLRequestSerialization.m in Sources */,
+				2EB772881E55721E00FB3D1B /* AFNetworkActivityIndicatorManager.m in Sources */,
+				2EB772801E55720300FB3D1B /* AFURLResponseSerialization.m in Sources */,
+				2EB772771E5571E800FB3D1B /* AFHTTPSessionManager.m in Sources */,
+				2EB772861E55721800FB3D1B /* AFImageDownloader.m in Sources */,
+				2EB7728A1E55722200FB3D1B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -496,6 +650,11 @@
 			isa = PBXTargetDependency;
 			target = 2E55BC821E52ABB1003CBB30 /* iWordWidget */;
 			targetProxy = 2E55BC8F1E52ABB2003CBB30 /* PBXContainerItemProxy */;
+		};
+		2EB772681E55718F00FB3D1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EB772611E55718F00FB3D1B /* IWShareKit */;
+			targetProxy = 2EB772671E55718F00FB3D1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,7 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K9PH44V6Y;
-				GCC_PREFIX_HEADER = /Users/zhouyong/Documents/2017/Projects/iWord/iWord/iWord/IW_Header.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iWord/IW_Header.pch";
 				INFOPLIST_FILE = iWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -634,7 +793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6K9PH44V6Y;
-				GCC_PREFIX_HEADER = /Users/zhouyong/Documents/2017/Projects/iWord/iWord/iWord/IW_Header.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/iWord/IW_Header.pch";
 				INFOPLIST_FILE = iWord/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -671,6 +830,50 @@
 			};
 			name = Release;
 		};
+		2EB7726C1E55718F00FB3D1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IWShareKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.IWShareKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2EB7726D1E55718F00FB3D1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6K9PH44V6Y;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IWShareKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuige.IWShareKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +903,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2EB7726B1E55718F00FB3D1B /* Build configuration list for PBXNativeTarget "IWShareKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB7726C1E55718F00FB3D1B /* Debug */,
+				2EB7726D1E55718F00FB3D1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

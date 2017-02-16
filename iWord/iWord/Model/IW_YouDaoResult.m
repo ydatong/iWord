@@ -10,4 +10,35 @@
 
 @implementation IW_YouDaoResult
 
++ (instancetype)modelWithDict:(NSDictionary *)dict {
+    
+    IW_YouDaoResult *result = [[IW_YouDaoResult alloc] init];
+    
+    result.wordId = [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970] * 1000];
+    result.createTime = [NSDate date];
+    result.times = 1;
+    
+    NSDictionary *basic = dict[@"basic"];
+    result.word = dict[@"query"];
+    result.prefixLetter = [result.word substringToIndex:1];
+    result.explains = basic[@"explains"];
+    result.phoneticAM = basic[@"us-phonetic"];
+    result.phoneticUK = basic[@"uk-phonetic"];
+    result.webExplains = dict[@"web"];
+    result.translation = dict[@"translation"];
+    return result;
+}
+
+- (NSString*)explainString {
+    
+    NSMutableString *str = [NSMutableString string];
+    
+    for (int i = 0 ; i < self.explains.count; i++) {
+        [str appendString:self.explains[i]];
+        if (i != self.explains.count -1) [str appendString:@"\n"];
+    }
+    
+    return [NSString stringWithFormat:@"%@",str];
+}
+
 @end

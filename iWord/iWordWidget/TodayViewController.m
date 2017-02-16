@@ -8,8 +8,20 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+#import "IW_DBManager.h"
+#import "IW_WordBaseModel.h"
+#import "IW_WordAPITool.h"
+#import "IW_SharedTool.h"
+#import "AFNetworking.h"
+
 
 @interface TodayViewController () <NCWidgetProviding>
+
+{
+    
+    __weak IBOutlet UITextView *explainTextView;
+
+}
 
 @end
 
@@ -17,7 +29,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pasteboardChanged:) name:UIPasteboardChangedNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    NSString *word = [UIPasteboard generalPasteboard].string;
+    NSString *savedWord = [[NSUserDefaults standardUserDefaults] valueForKey:@"savedWord"];
+    if (word) {
+        if (savedWord && [word isEqualToString:savedWord]) {
+            return;
+        }
+        [[NSUserDefaults standardUserDefaults] setObject:word forKey:@"savedWord"];
+        [[IW_WordAPITool sharedTool] queryWord:word resultHandle:^(IW_WordBaseModel *resultModel, NSError *error) {
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                explainTextView.text = resultModel.explainString;
+            });
+            
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +67,31 @@
     // If there's an update, use NCUpdateResultNewData
 
     completionHandler(NCUpdateResultNewData);
+}
+
+
+- (void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize {
+    
+    if (activeDisplayMode == NCWidgetDisplayModeCompact) {
+        self.preferredContentSize = CGSizeMake(0, 200);
+    }else{
+        self.preferredContentSize = CGSizeMake(0, 300);
+    }
+}
+
+- (void)pasteboardChanged:(NSNotification*)notif {
+    
+    
+}
+
+- (IBAction)queryWord:(id)sender {
+    
+    
+}
+
+
+- (IBAction)openWordList:(id)sender {
+    
 }
 
 @end

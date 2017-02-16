@@ -10,19 +10,23 @@
 
 //词典类型
 typedef NS_ENUM(NSInteger, IWApiType) {
-    IWApiTypeYouDao = 1 //有道词典
+    IWApiTypeYouDao = 1, //有道词典
+    IWApiTypeJinShan     ///金山词典
 };
 
-@protocol IW_WordModelDelegate <NSObject>
-
-+ (instancetype)modelWithDict:(NSDictionary*)dict;
-
-@end
-
-@interface IW_WordBaseModel : NSObject <IW_WordModelDelegate>
+@interface IW_WordBaseModel : NSObject
 
 @property (nonatomic, copy) NSString *word;
 @property (nonatomic, copy) NSString *wordId;
+@property (nonatomic, strong) NSArray *explains;
+@property (nonatomic, copy)  NSString *explainString;
+@property (nonatomic, copy) NSString *phoneticAM; //美式音标
+@property (nonatomic, copy) NSString *phoneticUK; //英式音标
+/**/
+@property (nonatomic, strong) NSDate *createTime;
+@property (nonatomic, assign) NSInteger times; //遇到的次数
+@property (nonatomic, copy) NSString *prefixLetter; //首字母
 
++ (instancetype)modelWithDict:(NSDictionary*)dict;
 
 @end

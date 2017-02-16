@@ -15,6 +15,12 @@
  http://fanyi.youdao.com/openapi.do?keyfrom=iWord-2017&key=608162978&type=data&doctype=<doctype>&version=1.1&q=要翻译的文本
  */
 
+/*
+ 金山
+ API key:51B20A3F6B67FEE8E352D7E6086E1A67
+ http://dict-co.iciba.com/api/dictionary.php?key=51B20A3F6B67FEE8E352D7E6086E1A67&type=json&w=
+ */
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
@@ -25,8 +31,9 @@
 #pragma mark - model
 #import "IW_WordBaseModel.h"
 #import "IW_YouDaoResult.h"
-
+#import "IW_JinShanResult.h"
 
 #pragma mark - constant
 
-UIKIT_EXTERN NSString *const IW_YouDaoApi;
+UIKIT_EXTERN NSString *const IW_YouDaoApi;  //有道
+UIKIT_EXTERN NSString *const IW_JinShanApi; //金山
