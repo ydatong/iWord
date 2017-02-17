@@ -49,15 +49,20 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     
+    UITabBarController *rootvc = (UITabBarController*)self.window.rootViewController;
     if ([url.absoluteString hasPrefix:@"todaywidget://"]) {
         if ([url.absoluteString hasSuffix:@"query"]) { //查单词
             [IW_AppManager defaultManager].launchType = IW_LaunchTypeQuery;
+            rootvc.selectedIndex = 0;
         }else if ([url.absoluteString hasSuffix:@"list"]) { //单词列表
             [IW_AppManager defaultManager].launchType = IW_LaunchTypeList;
+            rootvc.selectedIndex = 1;
         }else if ([url.absoluteString hasSuffix:@"explain"]){ //单词解释
             [IW_AppManager defaultManager].launchType = IW_LaunchTypeExplain;
+            rootvc.selectedIndex = 0;
         }
     }
+    [DefaultNotificationCenter postNotificationName:kAppDidLanuchedByTodayWidget object:nil];
     return YES;
 }
 

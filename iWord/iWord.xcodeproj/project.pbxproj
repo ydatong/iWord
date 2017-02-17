@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		253ACA671E55F5520060BF7B /* IW_AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 253ACA661E55F5520060BF7B /* IW_AppManager.m */; };
+		2E25AB181E56E4F700EB1F9C /* IW_Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E25AB171E56E4F700EB1F9C /* IW_Const.m */; };
 		2E55BC6A1E52AB6F003CBB30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC691E52AB6F003CBB30 /* main.m */; };
 		2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6C1E52AB6F003CBB30 /* AppDelegate.m */; };
 		2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E55BC6F1E52AB6F003CBB30 /* IW_MainViewController.m */; };
@@ -153,6 +154,8 @@
 		253ACA551E5343980060BF7B /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		253ACA651E55F5520060BF7B /* IW_AppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_AppManager.h; sourceTree = "<group>"; };
 		253ACA661E55F5520060BF7B /* IW_AppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_AppManager.m; sourceTree = "<group>"; };
+		2E25AB161E56E4F700EB1F9C /* IW_Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IW_Const.h; sourceTree = "<group>"; };
+		2E25AB171E56E4F700EB1F9C /* IW_Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IW_Const.m; sourceTree = "<group>"; };
 		2E55BC651E52AB6F003CBB30 /* iWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E55BC691E52AB6F003CBB30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E55BC6B1E52AB6F003CBB30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -394,6 +397,8 @@
 				2E55BCD11E5320B2003CBB30 /* IW_SharedTool.m */,
 				253ACA651E55F5520060BF7B /* IW_AppManager.h */,
 				253ACA661E55F5520060BF7B /* IW_AppManager.m */,
+				2E25AB161E56E4F700EB1F9C /* IW_Const.h */,
+				2E25AB171E56E4F700EB1F9C /* IW_Const.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 			files = (
 				2EB772A11E55744E00FB3D1B /* IW_WordView.m in Sources */,
 				2E55BC701E52AB6F003CBB30 /* IW_MainViewController.m in Sources */,
+				2E25AB181E56E4F700EB1F9C /* IW_Const.m in Sources */,
 				2E55BCA71E52CF09003CBB30 /* IW_SettingViewController.m in Sources */,
 				2E55BCA11E52CECF003CBB30 /* IW_WordSearchController.m in Sources */,
 				2E55BC6D1E52AB6F003CBB30 /* AppDelegate.m in Sources */,

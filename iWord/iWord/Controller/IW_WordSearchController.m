@@ -28,6 +28,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupUI];
+    [DefaultNotificationCenter addObserver:self selector:@selector(appLanuchdByTodayWidget:) name:kAppDidLanuchedByTodayWidget object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -39,6 +40,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)appLanuchdByTodayWidget:(NSNotification*)noti {
+    
+    [self handleAppLanuchByTodayWidget];
 }
 
 //切换字典

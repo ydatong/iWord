@@ -36,6 +36,10 @@
     self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
     compactExplainTextView.hidden = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pasteboardChanged:) name:UIPasteboardChangedNotification object:nil];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showWordExplain)];
+    [explainTextView addGestureRecognizer:tap];
+    [compactExplainTextView addGestureRecognizer:tap];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -119,7 +123,7 @@
     [self.extensionContext  openURL:[NSURL URLWithString:@"todaywidget://list" ]completionHandler:nil];
 }
 
-- (IBAction)showWordExplain:(id)sender {
+- (void)showWordExplain {
 
     [self.extensionContext  openURL:[NSURL URLWithString:@"todaywidget://explain" ]completionHandler:nil];
 }
